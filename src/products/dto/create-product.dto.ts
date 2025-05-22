@@ -17,5 +17,5 @@ export class CreateProductDto {
 
   @IsNotEmpty({ message: 'La categoria es obligatoria' })
   @IsInt({ message: 'La categoria no es válida' })
-  CategoryId: number;
+  categoryId: number;
 }
