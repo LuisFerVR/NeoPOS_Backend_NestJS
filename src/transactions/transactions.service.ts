@@ -11,9 +11,9 @@ import {
   TransactionContents,
 } from './entities/transaction.entity';
 import { Between, FindManyOptions, Repository } from 'typeorm';
-import { Product } from 'src/products/entities/product.entity';
+import { Product } from '../products/entities/product.entity';
 import { endOfDay, isValid, parseISO, startOfDay } from 'date-fns';
-import { CouponsService } from 'src/coupons/coupons.service';
+import { CouponsService } from '../coupons/coupons.service';
 @Injectable()
 export class TransactionsService {
   constructor(
