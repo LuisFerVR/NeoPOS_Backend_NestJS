@@ -82,7 +82,7 @@ export class TransactionsService {
         }
       },
     );
-    return 'Venta realizada correctamente';
+    return { message: 'Venta realizada correctamente' };
   }
 
   findAll(transactionDate?: string) {
