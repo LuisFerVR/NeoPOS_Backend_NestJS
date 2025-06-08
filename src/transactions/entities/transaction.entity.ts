@@ -12,13 +12,13 @@ export class Transaction {
   @PrimaryGeneratedColumn()
   id: number;
 
-  @Column()
+  @Column({ type: 'numeric', precision: 10, scale: 2, nullable: true })
   total: number;
 
   @Column({ type: 'varchar', length: 30, nullable: true })
   coupon: string;
 
-  @Column({ type: 'decimal', nullable: true, default: 0 })
+  @Column({ type: 'numeric', precision: 10, scale: 2, nullable: true })
   discount: number;
 
   @Column({ type: 'timestamp', default: () => 'CURRENT_TIMESTAMP' })
